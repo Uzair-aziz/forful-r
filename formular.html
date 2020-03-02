@@ -3,14 +3,19 @@
 <html>
 <body>
 
-<h2>Logga in</h2>
+<!DOCTYPE html>
+<html>
+<body>
+    
 
 <form action="/action_page.php">
+    <fieldset>
+       <legend>Logga in:</legend>
   <label for="username">Username:</label><br>
   <input type="text" id="username" name="username"><br>
   <label for="pwd">Password:</label><br>
   <input type="password" id="pwd" name="pwd"><br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit">   </fieldset>
 </form>
     
     
@@ -28,15 +33,13 @@
     
     <h2>Pre-selected Option</h2>
 
-<p>You can preselect an option with the selected attribute:</p>
-
 <form action="/action_page.php">
-  <label for="cars">Choose a car:</label>
+  <label for="cars">Välj din skola:</label>
   <select id="cars" name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat" selected>Fiat</option>
-    <option value="audi">Audi</option>
+    <option value="volvo" selected>Kungsmad</option>
+    <option value="saab">Teknikum</option>
+    <option value="fiat">Katedral</option>
+    <option value="audi">Växjö Fria</option>
   </select>
   <input type="submit">
 </form>
